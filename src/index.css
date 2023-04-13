@@ -155,12 +155,12 @@ form label span {
 }
 
 .careers p,
-.wiki p  {
+.wiki p {
   margin: 0;
 }
 
 .careers>a p:last-child,
-.wiki>a p:last-child  {
+.wiki>a p:last-child {
   font-size: 0.8em;
   color: black;
 }
