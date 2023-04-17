@@ -1,0 +1,13 @@
+[{
+  "_id": {
+    "$oid": "6437f9c5141bafb571c6c6f1"
+  },
+  "content": "right-clicking on the virtual machine and selecting the Delete Saved State... menu item",
+  "title": "the application encountered an error while attempting to change the state of hyper-v,"
+},{
+  "_id": {
+    "$oid": "6437fa8b141bafb571c6c6f2"
+  },
+  "title": "Network",
+  "content": "First step is to take remote connect to a working PC using AnyDesk(if customer doesn't have any ask him to download from https://150.co.il/ Once customer gets AnyDesk opened he should see his Address as below (highlighted in yellow) anyesk You need to type the number in the field above it (highlighted in green) Ask customer to approve connection and accept elevation Then you are connected to the client PC we need to troubleshoot the network Go to Start , type CMD and  inside the command prompt (cmd) type in ipconfig Search for IPv4 notice the IP address and the default gateway Run ping command to the default gateway number and notice the response E.x. - ping 10.0.0.138 Above is an example of a good connection"
+}]
