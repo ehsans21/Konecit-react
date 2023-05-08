@@ -1,33 +1,41 @@
+import { useState } from "react";
+import { Button, Form } from "react-bootstrap";
 import { useLoaderData, useParams } from "react-router-dom";
 
-export default function TodoDetails() {
-    const { id } = useParams()
-    const todo = useLoaderData()
 
-    return (
-        <div className="todo-details">
-            <h2>Career Details for {todo.title}</h2>
-            <p>Starting salary: {todo.salary}</p>
-            <p>Location: {todo.location}</p>
-            <div className="details">
-                <p>Aliqua exercitation culpa nulla excepteur Lorem aute consectetur amet aliqua ea.
-                    Amet ex cillum fugiat ipsum est dolore irure est exercitation elit sit ex qui.
-                    Nisi excepteur culpa aute labore id pariatur exercitation. Velit cupidatat fugiat consequat nisi ea.
-                    Dolore ut nisi tempor cillum consectetur ex minim dolor laborum incididunt ullamco dolore velit irure.</p>
-            </div>
-        </div>
-    )
+export default function CreateArea(props) {
+    const [note, setNote] = useState({
+        title: "",
+        content: ""
+    });
+
+
+
+
+ function TodoDetails(event) {
+    const {name, value} = event.target;
+
+    setNote(prevNote => {
+        return {
+            ...prevNote,
+            [name]: value
+        }
+    })
+
 }
 
-// loader function
-export const TodoDetailsLoader = async ({ params }) => {
-    const { id } = params
-
-    const res = await fetch('http://localhost:9000/' + id)
-
-    if (!res.ok) {
-        throw Error("Could not find any list")
-    }
+function submitNote(event) {
+    props.onAdd(note)
+    event.preventDefault();
     
-    return res.json()
+}
+    return (
+        <div className="todo-details">
+            <Form>
+                <input className="title" onChange={TodoDetails} value={note.title} placeholder="Title"/>
+                <textarea name="content" onChange={TodoDetails} value={note.content} placeholder="Take a note..." />
+                <Button variant="outline-success" onClick={submitNote}>Add</Button>{' '}
+            </Form>
+        </div>
+    )
 }

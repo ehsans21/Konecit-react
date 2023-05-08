@@ -1,26 +1,41 @@
-import { useLoaderData, Link } from "react-router-dom";
+import { Card, Button, Col, Row } from "react-bootstrap";
+import todo from "./data";
+import TodoDetails from "./todoList";
+import { useState } from 'react';
 
-export default function Todo() {
-    const todo = useLoaderData()
-    return (
-        <div className="todo">
-            {todo.map(todo => (
-                <Link to={todo.id.toString()} key={todo.id}>
-                    <p>{todo.title}</p>
-                    <p>Based in {todo.location}</p>
-                </Link>
-            ))}
-        </div>
-    )
-}
 
-// loader function
-export const todoLoader = async () => {
-    const res = await fetch('http://localhost:5000')
 
-    if (!res.ok) {
-        throw Error("Could not fetch the list")
+export default function TodoListS() {
+    const [notes, setNotes] = useState([]);
+    
+    function addNote(newNote) {
+        setNotes(prevNotes => {
+           return [...prevNotes, newNote];
+        });
     }
+    return (
 
-    return res.json()
+       <div className="todo">
+        <TodoDetails onAdd={addNote} />
+         {notes.map((todo) => {
+                return (
+                    <Row xs={1} md={2} className="g-4" key={todo.id}>
+                        {Array.from({ length: 1 }).map((_, idx) => (
+                        <Col>
+                            <Card className="mt-3" style={{ color: "#000", width: "18rem" }}>
+                                <Card.Body>
+                                    <Card.Title>
+                                        {todo.title}
+                                    </Card.Title>
+                                    <Card.Text> {todo.details}</Card.Text>
+                                </Card.Body>
+                            </Card>
+                        </Col>
+                        ))}
+                    </Row>
+                )
+            })}
+
+        </div>
+    );
 }

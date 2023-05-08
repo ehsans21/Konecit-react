@@ -22,6 +22,7 @@ import TodoList, {TodoDetailsLoader} from "./pages/todoList/todoList";
 import TodoError from "./pages/todoList/todoError";
 import Timesheet from "./pages/timesheet/Timesheet";
 import Showtime from "./pages/timesheet/Timesheet";
+import Infrastructure from "./pages/infrastructure/Infrastructure";
 
 // layout
 import RootLayout from "./layouts/RootLayout";
@@ -53,14 +54,16 @@ const router = createBrowserRouter(
         <Route path="signinissues" element={<Signinissues />} />
       </Route>
 
+      <Route path="infrastructure" element={<Infrastructure />} />
+
       <Route path="careers" element={<CareersLayout />} errorElement={<CareersError />} >
         <Route index element={<Careers />} loader={careersLoader} />
         <Route path=":id" element={<CareersDetails />} loader={careerDetailsLoader} />
       </Route>
 
       <Route path="todo" element={<TodoLayout />} errorElement={<TodoError />} >
-        <Route index element={<Todo />} loader={todoLoader} />
-        <Route path=":id" element={<TodoList />} loader={TodoDetailsLoader} />
+        <Route index element={<Todo />} />
+        <Route path=":id" element={<TodoList />} />
       </Route>
 
       <Route path="about" element={<About />} />

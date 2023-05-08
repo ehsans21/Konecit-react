@@ -1,0 +1,372 @@
+const infra= [
+    {
+  "_id": {
+    "$oid": "64380eb4141bafb571c6c700"
+  },
+  "Server Name": "Hadi",
+  "Clients": "Tanor",
+  "IP": "10.0.0.19",
+  "port": "3383",
+  "CPU": "xeon E3 1220 V3",
+  "RAM": "16GB",
+  "SSD": "120GB",
+  "HDD": "HDD - 1TB",
+  "OS": "Windows server 2019",
+  "Software": "null",
+  "Users": "Administrator\nanas\ncpa\nGuest\nkopa\nkopa2\noffice",
+  "grace period": "3/6/2023"
+},{
+  "_id": {
+    "$oid": "64380eb4141bafb571c6c701"
+  },
+  "Server Name": "Qserver",
+  "Clients": "bahri\nkonecIT",
+  "IP": "10.0.0.247",
+  "port": "7794",
+  "CPU": "xeon E3 1230 V5",
+  "RAM": "16GB",
+  "SSD": "1TB",
+  "HDD": "null",
+  "OS": "Windows server 2019",
+  "Software": "HyperV",
+  "Users": "null",
+  "grace period": "null"
+},{
+  "_id": {
+    "$oid": "64380eb4141bafb571c6c702"
+  },
+  "Server Name": "pserver",
+  "Clients": "petra\nmasofon",
+  "IP": "10.0.0.88",
+  "port": "7794",
+  "CPU": "xeon E-2224",
+  "RAM": "32GB",
+  "SSD": "480GB",
+  "HDD": "2 * 1TB",
+  "OS": "Windows server 2019",
+  "Software": "HyperV",
+  "Users": "null",
+  "grace period": "null"
+},{
+  "_id": {
+    "$oid": "64380eb4141bafb571c6c703"
+  },
+  "Server Name": "Kedom",
+  "Clients": "Aamota",
+  "IP": "10.0.0.87",
+  "port": "7746",
+  "CPU": "I5-2500",
+  "RAM": "16GB",
+  "SSD": "120GB",
+  "HDD": "null",
+  "OS": "Windows server 2019",
+  "Software": "codebena",
+  "Users": "Administrator\nahmad\nalaa\namna\nanas\ncpa\nesraa\nfiryal\nGuest\noffice\nrajaa",
+  "grace period": "null"
+},{
+  "_id": {
+    "$oid": "64380eb4141bafb571c6c704"
+  },
+  "Server Name": "1stserver",
+  "Clients": "abusalehmeat\nashraf\nKAZA\nELEGANTCIA\ntop-a",
+  "IP": "10.0.0.85",
+  "port": "7747",
+  "CPU": "I7-10700",
+  "RAM": "64GB",
+  "SSD": "1TB",
+  "HDD": "null",
+  "OS": "Windows XP",
+  "Software": "HyperV",
+  "Users": "null",
+  "grace period": "null"
+},{
+  "_id": {
+    "$oid": "64380eb4141bafb571c6c705"
+  },
+  "Server Name": "2stserver",
+  "Clients": "aboali\navrst\ndolce\nomanot\nsamer",
+  "IP": "10.0.0.194",
+  "port": "7795",
+  "CPU": "I9-12900K",
+  "RAM": "64GB",
+  "SSD": "240GB\n2 * 1TB",
+  "HDD": "null",
+  "OS": "Windows XP",
+  "Software": "HyperV",
+  "Users": "null",
+  "grace period": "null"
+},{
+  "_id": {
+    "$oid": "64380eb4141bafb571c6c706"
+  },
+  "Server Name": "main",
+  "Clients": "ahmad parts",
+  "IP": "10.0.0.18",
+  "port": "9092",
+  "CPU": "xeon E3-1220",
+  "RAM": "8GB",
+  "SSD": "null",
+  "HDD": "2 * 300GB",
+  "OS": "Windows Server 2008",
+  "Software": "Priority",
+  "Users": "mahsan1\ncpa\nanas\nosfya",
+  "grace period": "null"
+},{
+  "_id": {
+    "$oid": "64380eb4141bafb571c6c707"
+  },
+  "Server Name": "rooya",
+  "Clients": "rooya",
+  "IP": "10.0.0.52",
+  "port": "3399",
+  "CPU": "xeon E3-1220",
+  "RAM": "8GB",
+  "SSD": "250GB",
+  "HDD": "1TB",
+  "OS": "Windows Server 2019",
+  "Software": "null",
+  "Users": "office\nanna\ncpa\nolga\nolga2\nroozz\nsami",
+  "grace period": "3/6/2023"
+},{
+  "_id": {
+    "$oid": "64380eb4141bafb571c6c708"
+  },
+  "Server Name": "tempserver",
+  "Clients": "asaad",
+  "IP": "10.0.0.169",
+  "port": "null",
+  "CPU": "i7-6700K",
+  "RAM": "16GB",
+  "SSD": "500GB",
+  "HDD": "null",
+  "OS": "Windows XP",
+  "Software": "Hyper-V",
+  "Users": "null",
+  "grace period": "null"
+},{
+  "_id": {
+    "$oid": "64380eb4141bafb571c6c709"
+  },
+  "Server Name": "back",
+  "Clients": "null",
+  "IP": "10.0.0.144",
+  "port": "null",
+  "CPU": "null",
+  "RAM": "null",
+  "SSD": "null",
+  "HDD": "null",
+  "OS": "null",
+  "Software": "null",
+  "Users": "null",
+  "grace period": "null"
+},{
+  "_id": {
+    "$oid": "64381225141bafb571c6c70a"
+  },
+  "pysical server": "Qserver",
+  "Server Name": "Bahri",
+  "IP": "10.0.0.176",
+  "PORT": "7795",
+  "CPU": "2",
+  "RAM": "4",
+  "SSD": "126",
+  "Software": "gbclock",
+  "Users": "office\nmanager\ncpa"
+},{
+  "_id": {
+    "$oid": "64381225141bafb571c6c70b"
+  },
+  "pysical server": "Qserver",
+  "Server Name": "konecit",
+  "IP": "null",
+  "PORT": "null",
+  "CPU": "4",
+  "RAM": "5",
+  "SSD": "null",
+  "Software": "null",
+  "Users": "null"
+},{
+  "_id": {
+    "$oid": "64381225141bafb571c6c70c"
+  },
+  "pysical server": "pserver",
+  "Server Name": "petra",
+  "IP": "10.0.0.76",
+  "PORT": "7794",
+  "CPU": "4",
+  "RAM": "8",
+  "SSD": "250",
+  "Software": "RADMIN (codebina + masofonim)",
+  "Users": "null"
+},{
+  "_id": {
+    "$oid": "64381225141bafb571c6c70d"
+  },
+  "pysical server": "pserver",
+  "Server Name": "petra-masofonem",
+  "IP": "10.0.0.77",
+  "PORT": "7794",
+  "CPU": "2",
+  "RAM": "8",
+  "SSD": "250",
+  "Software": "codebina",
+  "Users": "null"
+},{
+  "_id": {
+    "$oid": "64381225141bafb571c6c70e"
+  },
+  "pysical server": "1stserver",
+  "Server Name": "abusalehmeat",
+  "IP": "10.0.0.176",
+  "PORT": "7797",
+  "CPU": "2",
+  "RAM": "8",
+  "SSD": "250",
+  "Software": "codebina",
+  "Users": "null"
+},{
+  "_id": {
+    "$oid": "64381225141bafb571c6c70f"
+  },
+  "pysical server": "1stserver",
+  "Server Name": "ashraf",
+  "IP": "10.0.0.22",
+  "PORT": "7745",
+  "CPU": "1",
+  "RAM": "8",
+  "SSD": "120",
+  "Software": "codebina",
+  "Users": "null"
+},{
+  "_id": {
+    "$oid": "64381225141bafb571c6c710"
+  },
+  "pysical server": "1stserver",
+  "Server Name": "KAZA",
+  "IP": "10.0.0.21",
+  "PORT": "9094",
+  "CPU": "1",
+  "RAM": "6",
+  "SSD": "126",
+  "Software": "codebina",
+  "Users": "null"
+},{
+  "_id": {
+    "$oid": "64381225141bafb571c6c711"
+  },
+  "pysical server": "1stserver",
+  "Server Name": "ELEGANTCIA",
+  "IP": "10.0.0.17",
+  "PORT": "3377",
+  "CPU": "2",
+  "RAM": "8",
+  "SSD": "176",
+  "Software": "codebina",
+  "Users": "null"
+},{
+  "_id": {
+    "$oid": "64381225141bafb571c6c712"
+  },
+  "pysical server": "1stserver",
+  "Server Name": "top-a",
+  "IP": "10.0.0.86",
+  "PORT": "7749",
+  "CPU": "2",
+  "RAM": "8",
+  "SSD": "126",
+  "Software": "codebina",
+  "Users": "null"
+},{
+  "_id": {
+    "$oid": "64381225141bafb571c6c713"
+  },
+  "pysical server": "2stserver",
+  "Server Name": "aboali",
+  "IP": "10.0.0.236",
+  "PORT": "7795",
+  "CPU": "1",
+  "RAM": "4",
+  "SSD": "250",
+  "Software": "codebina",
+  "Users": "null"
+},{
+  "_id": {
+    "$oid": "64381225141bafb571c6c714"
+  },
+  "pysical server": "2stserver",
+  "Server Name": "avrst",
+  "IP": "10.0.0.198",
+  "PORT": "7795",
+  "CPU": "1",
+  "RAM": "4",
+  "SSD": "250",
+  "Software": "codebina",
+  "Users": "null"
+},{
+  "_id": {
+    "$oid": "64381225141bafb571c6c715"
+  },
+  "pysical server": "2stserver",
+  "Server Name": "dolce",
+  "IP": "10.0.0.195",
+  "PORT": "7795",
+  "CPU": "1",
+  "RAM": "8",
+  "SSD": "250",
+  "Software": "HASHVSHEVET",
+  "Users": "null"
+},{
+  "_id": {
+    "$oid": "64381225141bafb571c6c716"
+  },
+  "pysical server": "2stserver",
+  "Server Name": "omanot",
+  "IP": "10.0.0.157",
+  "PORT": "7796",
+  "CPU": "2",
+  "RAM": "16",
+  "SSD": "250",
+  "Software": "codebina",
+  "Users": "null"
+},{
+  "_id": {
+    "$oid": "64381225141bafb571c6c717"
+  },
+  "pysical server": "2stserver",
+  "Server Name": "samer",
+  "IP": "10.0.0.196",
+  "PORT": "7795",
+  "CPU": "3",
+  "RAM": "16",
+  "SSD": "300",
+  "Software": "codebina\nliram",
+  "Users": "null"
+},{
+  "_id": {
+    "$oid": "64381225141bafb571c6c718"
+  },
+  "pysical server": "2stserver",
+  "Server Name": "asaad",
+  "IP": "10.0.0.223",
+  "PORT": "7795",
+  "CPU": "4",
+  "RAM": "12",
+  "SSD": "350",
+  "Software": "codebina\ntamal",
+  "Users": "afula\nalaa\nanas\nasaad\nasaad-afula\nmerav\nrooya\nsaad\ntbasem"
+},{
+  "_id": {
+    "$oid": "64381225141bafb571c6c719"
+  },
+  "pysical server": "null",
+  "Server Name": "e",
+  "IP": "192.168.33.144",
+  "PORT": "7794",
+  "CPU": "2",
+  "RAM": "16",
+  "SSD": "250",
+  "Software": "null",
+  "Users": "null"
+}];
+
+export default infra
