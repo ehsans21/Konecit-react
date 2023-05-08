@@ -20,8 +20,8 @@ import Wiki from "./pages/Wiki/Wiki";
 import Todo, { todoLoader } from "./pages/todoList/todo";
 import TodoList, {TodoDetailsLoader} from "./pages/todoList/todoList";
 import TodoError from "./pages/todoList/todoError";
-
-
+import Timesheet from "./pages/timesheet/Timesheet";
+import Showtime from "./pages/timesheet/Timesheet";
 
 // layout
 import RootLayout from "./layouts/RootLayout";
@@ -31,6 +31,8 @@ import CareersLayout from "./layouts/CareersLayout"
 import { careersLoader } from "./pages/careers/Careers";
 import WikiLayout from "./layouts/WikiLayout";
 import TodoLayout from "./layouts/TodoLayout";
+import TimesheetLayout from "./layouts/TimesheetLayout";
+
 
 
 const router = createBrowserRouter(
@@ -62,6 +64,11 @@ const router = createBrowserRouter(
       </Route>
 
       <Route path="about" element={<About />} />
+
+      
+      <Route path="timesheet" element={<TimesheetLayout />} errorElement={<CareersError />} >      
+        <Route index element={<Timesheet />} />
+      </Route>
 
       <Route path="help" element={<HelpLayout />}>
         <Route path="faq" element={<Faq />} />

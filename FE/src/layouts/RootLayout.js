@@ -1,5 +1,6 @@
 import { NavLink, Outlet } from "react-router-dom";
 import Breadcrumbs from "../components/Breadcrumbs";
+import RespoNav from "../components/navbar";
 
 export default function RootLayout() {
     const currentYear = new Date().getFullYear();
@@ -7,22 +8,11 @@ export default function RootLayout() {
     return (
         <div className='root-layout'>
             <header>
-                <nav>
-                    <h1>KonecIT</h1>
-                    <NavLink to="/">Home</NavLink>
-                    <NavLink to="wiki">Wiki</NavLink>
-                    <NavLink to="inventory">Inventory</NavLink>
-                    <NavLink to="infrastructure">Infrastructure</NavLink>
-                    <NavLink to="todo">ToDo List</NavLink>
-                    <NavLink to="checklist">Checklist</NavLink>
-                    <NavLink to="technician">Technician</NavLink>
-                    <NavLink to="careers">Careers</NavLink>
-                    <NavLink to="about">About</NavLink>
-                    <NavLink to="help">Help</NavLink>
-                </nav>
+ 
+                <RespoNav />
                 <Breadcrumbs />
             </header>
-
+            
             <main>
                 <Outlet />
             </main>
